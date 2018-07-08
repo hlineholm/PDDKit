@@ -10,6 +10,12 @@
 		AF2BC08F20F1D5BE00C1C451 /* PDDKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AF2BC08520F1D5BE00C1C451 /* PDDKit.framework */; };
 		AF2BC09420F1D5BE00C1C451 /* PDDKitTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF2BC09320F1D5BE00C1C451 /* PDDKitTests.swift */; };
 		AF2BC09620F1D5BE00C1C451 /* PDDKit.h in Headers */ = {isa = PBXBuildFile; fileRef = AF2BC08820F1D5BE00C1C451 /* PDDKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		AF2BC0A020F1D9CA00C1C451 /* XCTestCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF2BC09F20F1D9CA00C1C451 /* XCTestCase.swift */; };
+		AF2BC0A220F1D9FC00C1C451 /* Window.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF2BC0A120F1D9FC00C1C451 /* Window.swift */; };
+		AF2BC0A420F1DA6900C1C451 /* UIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF2BC0A320F1DA6900C1C451 /* UIView.swift */; };
+		AF2BC0A620F1DAAB00C1C451 /* createTraitCollection.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF2BC0A520F1DAAB00C1C451 /* createTraitCollection.swift */; };
+		AF2BC0A820F1DAC200C1C451 /* createParent.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF2BC0A720F1DAC200C1C451 /* createParent.swift */; };
+		AF2BC0AB20F1DAE800C1C451 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AF2BC0AA20F1DAE800C1C451 /* XCTest.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -29,6 +35,12 @@
 		AF2BC08E20F1D5BE00C1C451 /* PDDKitTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PDDKitTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		AF2BC09320F1D5BE00C1C451 /* PDDKitTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PDDKitTests.swift; sourceTree = "<group>"; };
 		AF2BC09520F1D5BE00C1C451 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AF2BC09F20F1D9CA00C1C451 /* XCTestCase.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = XCTestCase.swift; sourceTree = "<group>"; };
+		AF2BC0A120F1D9FC00C1C451 /* Window.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Window.swift; sourceTree = "<group>"; };
+		AF2BC0A320F1DA6900C1C451 /* UIView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIView.swift; sourceTree = "<group>"; };
+		AF2BC0A520F1DAAB00C1C451 /* createTraitCollection.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = createTraitCollection.swift; sourceTree = "<group>"; };
+		AF2BC0A720F1DAC200C1C451 /* createParent.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = createParent.swift; sourceTree = "<group>"; };
+		AF2BC0AA20F1DAE800C1C451 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Platforms/iPhoneOS.platform/Developer/Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -36,6 +48,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AF2BC0AB20F1DAE800C1C451 /* XCTest.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -56,6 +69,7 @@
 				AF2BC08720F1D5BE00C1C451 /* PDDKit */,
 				AF2BC09220F1D5BE00C1C451 /* PDDKitTests */,
 				AF2BC08620F1D5BE00C1C451 /* Products */,
+				AF2BC0A920F1DAE700C1C451 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -73,6 +87,11 @@
 			children = (
 				AF2BC08820F1D5BE00C1C451 /* PDDKit.h */,
 				AF2BC08920F1D5BE00C1C451 /* Info.plist */,
+				AF2BC0A720F1DAC200C1C451 /* createParent.swift */,
+				AF2BC0A520F1DAAB00C1C451 /* createTraitCollection.swift */,
+				AF2BC0A320F1DA6900C1C451 /* UIView.swift */,
+				AF2BC0A120F1D9FC00C1C451 /* Window.swift */,
+				AF2BC09F20F1D9CA00C1C451 /* XCTestCase.swift */,
 			);
 			path = PDDKit;
 			sourceTree = "<group>";
@@ -84,6 +103,14 @@
 				AF2BC09520F1D5BE00C1C451 /* Info.plist */,
 			);
 			path = PDDKitTests;
+			sourceTree = "<group>";
+		};
+		AF2BC0A920F1DAE700C1C451 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				AF2BC0AA20F1DAE800C1C451 /* XCTest.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -194,6 +221,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AF2BC0A020F1D9CA00C1C451 /* XCTestCase.swift in Sources */,
+				AF2BC0A420F1DA6900C1C451 /* UIView.swift in Sources */,
+				AF2BC0A620F1DAAB00C1C451 /* createTraitCollection.swift in Sources */,
+				AF2BC0A820F1DAC200C1C451 /* createParent.swift in Sources */,
+				AF2BC0A220F1D9FC00C1C451 /* Window.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -345,6 +377,7 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_SEARCH_PATHS = "$(PLATFORM_DIR)/Developer/Library/Frameworks";
 				INFOPLIST_FILE = PDDKit/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -369,6 +402,7 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_SEARCH_PATHS = "$(PLATFORM_DIR)/Developer/Library/Frameworks";
 				INFOPLIST_FILE = PDDKit/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -387,6 +421,7 @@
 		AF2BC09D20F1D5BE00C1C451 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = PDDKitTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -404,6 +439,7 @@
 		AF2BC09E20F1D5BE00C1C451 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = PDDKitTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
