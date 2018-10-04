@@ -15,7 +15,6 @@
 		AF2BC0A420F1DA6900C1C451 /* UIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF2BC0A320F1DA6900C1C451 /* UIView.swift */; };
 		AF2BC0A620F1DAAB00C1C451 /* createTraitCollection.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF2BC0A520F1DAAB00C1C451 /* createTraitCollection.swift */; };
 		AF2BC0A820F1DAC200C1C451 /* createParent.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF2BC0A720F1DAC200C1C451 /* createParent.swift */; };
-		AF2BC0AB20F1DAE800C1C451 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AF2BC0AA20F1DAE800C1C451 /* XCTest.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,7 +47,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AF2BC0AB20F1DAE800C1C451 /* XCTest.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -385,6 +383,10 @@
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
+				"OTHER_LDFLAGS[sdk=iphonesimulator*]" = (
+					"-weak_framework",
+					XCTest,
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = se.henriklineholm.PDDKit;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
@@ -409,6 +411,10 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
+				);
+				"OTHER_LDFLAGS[sdk=iphonesimulator*]" = (
+					"-weak_framework",
+					XCTest,
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = se.henriklineholm.PDDKit;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
