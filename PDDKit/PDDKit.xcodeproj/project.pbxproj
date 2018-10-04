@@ -68,8 +68,8 @@
 			children = (
 				AF2BC08720F1D5BE00C1C451 /* PDDKit */,
 				AF2BC09220F1D5BE00C1C451 /* PDDKitTests */,
-				AF2BC08620F1D5BE00C1C451 /* Products */,
 				AF2BC0A920F1DAE700C1C451 /* Frameworks */,
+				AF2BC08620F1D5BE00C1C451 /* Products */,
 			);
 			sourceTree = "<group>";
 		};
