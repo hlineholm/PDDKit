@@ -3,7 +3,6 @@
 //  PDDKitTests
 //
 //  Created by Henrik Lineholm on 2018-07-08.
-//  Copyright © 2018 Henrik Lineholm. All rights reserved.
 //
 
 import XCTest

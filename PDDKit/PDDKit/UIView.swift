@@ -2,8 +2,7 @@
 //  UIView.swift
 //  PDDKit
 //
-//  Created by Lineholm, Henrik on 2017-10-11.
-//  Copyright © 2017 FLIR Instruments. All rights reserved.
+//  Created by Henrik Lineholm on 2017-10-11.
 //
 
 import Foundation

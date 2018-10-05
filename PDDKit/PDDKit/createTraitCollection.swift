@@ -2,8 +2,7 @@
 //  createTraitCollection.swift
 //  PDDKit
 //
-//  Created by Lineholm, Henrik on 2017-10-03.
-//  Copyright © 2017 FLIR Instruments. All rights reserved.
+//  Created by Henrik Lineholm on 2017-10-03.
 //
 
 import Foundation

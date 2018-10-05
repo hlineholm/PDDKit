@@ -3,7 +3,6 @@
 //  Support
 //
 //  Created by Henrik on 2017-09-11.
-//  Copyright © 2017 Henrik Lineholm. All rights reserved.
 //
 
 #if arch(i386) || arch(x86_64)
